@@ -9,10 +9,6 @@ interface SettingsPageProps{
     }
 };
 
-
-
-
-
 const SettingsPage:React.FC<SettingsPageProps>=async({
     params
 })=>{
@@ -30,12 +26,9 @@ const SettingsPage:React.FC<SettingsPageProps>=async({
         }
     });
 
-
     if(!store){
         redirect("/");
     }
-
-
 
     return (
       <div className="flex-col">
