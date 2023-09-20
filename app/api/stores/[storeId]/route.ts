@@ -63,6 +63,7 @@ export async function DELETE(
         userId,
       },
     });
+    return NextResponse.json(store);
   } catch (error) {
     console.log(`[STore_DELETE]`, error);
     return new NextResponse("Internal error", { status: 500 });
