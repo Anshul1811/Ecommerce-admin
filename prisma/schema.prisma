@@ -190,6 +190,7 @@ model Image {
   @@index([productId])
 }
 
+
 model Product{
   id String @id @default(uuid())
   storeId String
